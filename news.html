@@ -52,8 +52,7 @@
     <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1"></div>
     <a href="javascript: fblogin(); loginDialog(); return false;" id="fb-login">&#x270D</a>
     <script>
-     
-      function loginDialog(){
+     document.getElementById('fb-login').onclick = function loginDialog(){
         
         FB.getLoginStatus(function(response) {
           if (response.status === 'connected') {
