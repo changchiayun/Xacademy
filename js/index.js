@@ -15,7 +15,7 @@ collection.fetch({
     collection.each(function(object){
 
       $(".newsroom").append("<div class='span4'><img class='img-circle' src="+object.get("photo")+"><h5 id="+object.id+">"+object.get("datepicker")+"</h5><h4 id="+object.id+">"+object.get("title")+"</h4><div>");
-      
+      $("#"+object.id).on("click", removeCell);
       console.log("catch"); 
     });
   },
@@ -23,6 +23,14 @@ collection.fetch({
 });
 
 
+};
+
+var removeCell = function(){
+	var oid = this.id;
+	console.log(oid);
+	window.location.href = "news.html";
+
+	
 };
 
 

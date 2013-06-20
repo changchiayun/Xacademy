@@ -33,8 +33,25 @@ body {
   text-align: center;
 }
 
-.newsroom img {
+.nail {
   box-shadow: 0 10px 6px -6px black;
   height: 200px;
   width: 200px;
 }
+
+.bigNail {
+  box-shadow: 0 10px 6px -6px black;
+}
+
+.edit {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  top: 5%;
+  left: 97%;
+}
+
+.edit:hover {
+  text-decoration: none;
+}
+
