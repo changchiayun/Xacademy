@@ -18,10 +18,22 @@
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/news.js"></script>
     <script type="text/javascript" src="js/changeurl.js"></script>
+    <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
 
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=565761823469794";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
   	 <div class="navbar navbar-inverse navbar-fixed-top">
        <div class="navbar-inner">
         <ul class="menu nav pull-center">
@@ -37,33 +49,8 @@
         </ul>
       </div>
     </div>
-    <div id="fb-root"></div>
-    <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
-    <script>
-      var defaultPath = "news.html";
-      var uid;
-      var Access_Token;
-      
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: "565761823469794", // Your facebook app id
-          status: true,
-          cookie: true,
-          xfbml: true
-        });
-      }
-      
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=565761823469794";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
-    <a href="javascript: fblogin(); loginDialog(); return false;" id="fb-login" >&#x270D</a>
+    
+    <a href="javascript: fblogin(); loginDialog(); return false;" id="fb-login" class="fb-login-button">&#x270D</a>
     <script>
       function fblogin() {
       $(window).load(function () {
