@@ -49,14 +49,10 @@
         </ul>
       </div>
     </div>
-    
-    <a href="javascript: fblogin(); loginDialog(); return false;" id="fb-login" class="fb-login-button">&#x270D</a>
+    <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1"></div>
+    <a href="javascript: fblogin(); loginDialog(); return false;" id="fb-login">&#x270D</a>
     <script>
-      function fblogin() {
-      $(window).load(function () {
-          FB.login();
-      });
-
+     
       function loginDialog(){
         
         FB.getLoginStatus(function(response) {
