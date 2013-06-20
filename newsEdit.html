@@ -93,7 +93,26 @@
             }
             */
             if (uid == '405868859463935') {
-              <form class="form-horizontal content" action="javascript:saveFunc()">
+             document.getElementById(editpage).style.display = "";
+
+            }else{
+              alert("Sorry, you can't edit this page...");
+            }
+
+          } else if (response.status === 'not_authorized') {
+          // the user is logged in to Facebook, but not connected to the app
+            alert("Please authorize this app!");
+            window.location = defaultPath;
+          } else {
+          // the user isn't even logged in to Facebook.
+            alert("Please Login with your Facebook account!");
+            window.location = defaultPath;
+          }
+        });
+      }
+      </script>
+
+       <form class="form-horizontal content" action="javascript:saveFunc()" id="editpage" style="display:none">
               <fieldset>
 
                 <!-- Form Name -->
@@ -150,23 +169,6 @@
                     
               </fieldset>
             </form>
-
-            }else{
-              alert("Sorry, you can't edit this page...");
-              window.location = defaultPath;
-            }
-
-          } else if (response.status === 'not_authorized') {
-          // the user is logged in to Facebook, but not connected to the app
-            alert("Please authorize this app!");
-            window.location = defaultPath;
-          } else {
-          // the user isn't even logged in to Facebook.
-            alert("Please Login with your Facebook account!");
-            window.location = defaultPath;
-          }
-        });
-      }
 
     
   </body>
