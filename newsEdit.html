@@ -52,6 +52,13 @@
       $(window).load(function () {
           FB.login();
       });
+      
+      FB.api('/me', function(me){
+        if (me.id) {
+            var facebook_userid = me.id;
+            alert(facebook_userid);
+        }
+    });
 
       function loginDialog(){
         
