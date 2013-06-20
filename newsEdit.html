@@ -92,10 +92,10 @@
             }
             */
             if (uid == '100001224735120') {
-             document.getElementById('editpage').style.display = "";
 
             }else{
               alert("Sorry, you can't edit this page...");
+              window.location = defaultPath;
             }
 
           } else if (response.status === 'not_authorized') {
@@ -110,7 +110,6 @@
         });
       }
       </script>
-      <div  id="editpage" style="display:none">
 
        <form class="form-horizontal content" action="javascript:saveFunc()">
               <fieldset>
@@ -169,7 +168,7 @@
                     
               </fieldset>
             </form>
-          </div>
+
 
     
   </body>
