@@ -45,10 +45,11 @@ body {
 
 .edit{
   position: relative;
-  font-size: 72px;
+  font-size: 18px;
   text-decoration: none;
-  top: 10%;
-  left: 50%;
+  color: #000;
+  top: 5%;
+  left: 97%;
 }
 
 .edit:hover {
