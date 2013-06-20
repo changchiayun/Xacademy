@@ -67,7 +67,7 @@
             if (uid == '100001224735120'||'100000115607073') {
               window.location = successPath;
             }else{
-              alert("you can not edit the news!");
+              alert("你沒有編輯的權限！");
               window.location = defaultPath;
             };
           } else if (response.status === 'not_authorized') {
@@ -76,7 +76,7 @@
             window.location = defaultPath;
           } else {
           // the user isn't even logged in to Facebook.
-            alert("Please Login with your Facebook account!");
+            alert("請登入Facebook帳號");
             window.location = defaultPath;
           }
         });
