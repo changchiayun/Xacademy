@@ -17,23 +17,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/news.js"></script>
-    <script type="text/javascript" src="js/changeurl.js"></script>
-    <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
 
   </head>
 
   <body>
-    <div id="fb-root"></div>
-    <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=565761823469794";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-
   	 <div class="navbar navbar-inverse navbar-fixed-top">
        <div class="navbar-inner">
         <ul class="menu nav pull-center">
@@ -49,50 +36,7 @@
         </ul>
       </div>
     </div>
-    <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1"></div>
-    <a href="javascript: fblogin(); loginDialog(); return false;" id="fb-login">&#x270D</a>
-    <script>
-     document.getElementById('fb-login').onclick = function loginDialog(){
-        
-        FB.getLoginStatus(function(response) {
-          if (response.status === 'connected') {
-          
-            uid = response.authResponse.userID;
-            Access_Token = response.authResponse.accessToken;
-            //authResponse returns the list such as below
-            //If you store these informations, you can further use them to promote your website
-            /* the form returned
-            {
-              status: 'connected',
-              authResponse: {
-                accessToken: '...',
-                expiresIn:'...',
-                signedRequest:'...',
-                userID:'...'
-              }
-            }
-            */
-            if (uid == '100001224735120') {
-              window.open("newsEdit.html");
-              
-            }else{
-              alert("Sorry, you can't edit this page...");
-              window.location = defaultPath;
-            }
-
-          } else if (response.status === 'not_authorized') {
-          // the user is logged in to Facebook, but not connected to the app
-            alert("Please authorize this app!");
-            window.location = defaultPath;
-          } else {
-          // the user isn't even logged in to Facebook.
-            alert("Please Login with your Facebook account!");
-            window.location = defaultPath;
-          }
-        });
-      }
-      };
-    </script>
+    <a href="newsEdit.html" class="edit">&#x270D</a>
 
     <div class="row-fluid content"><div class="newsroom container"></div></div>
     

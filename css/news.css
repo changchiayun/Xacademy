@@ -43,7 +43,7 @@ body {
   box-shadow: 0 10px 6px -6px black;
 }
 
-#fb-login{
+.edit{
   position: relative;
   font-size: 72px;
   text-decoration: none;
@@ -51,7 +51,7 @@ body {
   left: 50%;
 }
 
-#fb-login:hover {
+.edit:hover {
   text-decoration: none;
 }
 
