@@ -47,8 +47,8 @@ body {
   position: relative;
   font-size: 18px;
   text-decoration: none;
-  top: 5%;
-  left: 97%;
+  top: 10%;
+  left: 50%;
 }
 
 #fb-login:hover {
