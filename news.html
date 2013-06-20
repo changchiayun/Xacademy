@@ -63,9 +63,9 @@
     </script>
 
 
-    <a href="javascript: FB.login(); return false;" id="fb-login" >&#x270D</a>
+    <a href="javascript: fblogin(); loginDialog(); return false;" id="fb-login" >&#x270D</a>
     <script>
-      document.getElementById('fb-login').onclick = function() {
+      function fblogin() {
       $(window).load(function () {
           FB.login();
       });
