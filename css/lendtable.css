@@ -29,3 +29,29 @@ body {
 
 }
 
+#calendar {
+  margin: 0px auto;
+  position: relative;
+  text-align:center; 
+  top:70px;
+}
+
+#rule {
+  position: relative;
+  top: 100px;
+}
+
+
+h4{
+  font-size: 16px;
+  text-align:center;
+  color: #666;
+}
+
+.btn {
+  float: right;
+  position: relative;
+  top: 35px;
+}
+
+

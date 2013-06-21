@@ -50,6 +50,7 @@ body {
 
 .team {
   text-align:center;
+  margin: 0 auto;
   margin-top: -60px;
   margin-bottom: 50px;
   font-family: 微軟正黑體;
@@ -62,12 +63,18 @@ body {
   margin-bottom: 10px;
   font-family: 微軟正黑體;
   font-size: 20px;
+  color: #c1d564;
 }
 
 .people {
   position: relative;
-  left: 50px;
+  left: 60px;
   text-align:left;
   list-style: none;
 }
+
+h2 {
+  color: #b1d023;
+}
+
 

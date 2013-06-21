@@ -30,6 +30,10 @@ h1,h2,h4,h5,h6 {
 	text-shadow: #000 1px 1px 2px;
 	margin-bottom: 5px;
 }
+
+h3 {
+	color: #775a3f;
+}
 	h1 {
 		font-size: 18px;
 	}

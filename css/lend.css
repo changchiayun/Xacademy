@@ -67,7 +67,7 @@ body {
 
 .maparea div{
   position: relative;
-  top: 500px;
+  top: 460px;
   left:100px;
 }
 
@@ -80,4 +80,16 @@ body {
   height: 100%;
   overflow: hidden;
   margin-left: auto;
+}
+
+.maparea a img{
+  opacity: 0.5;
+}
+
+.maparea a img:hover{
+  opacity: 1;
+}
+
+h2 {
+  color: #443e38;
 }
