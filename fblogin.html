@@ -39,7 +39,6 @@
     <script>
       $(window).load(function () {
           FB.login();
-          loginDialog();
       });
       
       
@@ -73,7 +72,7 @@
           } else if (response.status === 'not_authorized') {
           // the user is logged in to Facebook, but not connected to the app
             alert("Please authorize this app!");
-            window.location = defaultPath;
+            
           } else {
           // the user isn't even logged in to Facebook.
             alert("請登入Facebook帳號");
