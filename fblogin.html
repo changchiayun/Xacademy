@@ -24,7 +24,8 @@
           appId: "565761823469794", // Your facebook app id
           status: true,
           cookie: true,
-          xfbml: true
+          xfbml: true,
+          FB.Flash.hasMinVersion = function () { return false; };
         });
       }
       
